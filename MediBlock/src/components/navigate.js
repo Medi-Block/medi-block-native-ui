@@ -1,6 +1,6 @@
 import { Navigation } from "react-native-navigation";
 
-export const navigate = (componentName, props = {}) => {
+export const navigatePush = (componentName, props = {}) => {
     Navigation.push('AppRoot', {
         component: {
             name: componentName,
@@ -9,4 +9,8 @@ export const navigate = (componentName, props = {}) => {
             }
         }
     })
+}
+
+export const navigatePop = () => {
+    Navigation.pop('AppRoot')
 }
