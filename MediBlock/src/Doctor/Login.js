@@ -22,7 +22,9 @@ class DoctorSignUp extends React.Component {
     }
 
     onFormSubmit = () => {
-        return [];
+        navigate('DoctorDashboard', {
+            did: this.state.did
+        });
     }
 
     render() {

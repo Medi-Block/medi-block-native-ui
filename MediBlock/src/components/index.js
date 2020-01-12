@@ -13,3 +13,4 @@ export * from './FormView';
 export * from './FormDatePicker';
 export * from './NavigationBtn';
 export * from './navigate';
+export * from './Info';

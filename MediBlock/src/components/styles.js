@@ -63,7 +63,7 @@ export default StyleSheet.create({
     buttonText: {
         alignSelf: 'center',
         color: defaultStyle.BUTTON_BACKGROUND_COLOR_PRIMARY,
-        fontSize: defaultStyle.BUTTON_FONT_SIZE_PRIMARY,
+        fontSize: defaultStyle.FONT_SIZE_NORMAL,
         fontWeight: defaultStyle.BUTTON_FONT_WEIGHT_PRIMARY,
         fontFamily: defaultStyle.BUTTON_FONT_FAMILY_PRIMARY,
         textTransform: defaultStyle.BUTTON_TEXT_TRANSFORM,
