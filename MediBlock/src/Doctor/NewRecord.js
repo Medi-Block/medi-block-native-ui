@@ -42,13 +42,19 @@ class NewRecord extends React.Component {
                     <ScrollView>
                         <FormColoredTextField
                             placeholder="Enter Details here"
-                            title="Details"
+                            title="Description of medical condition"
                             onChangeText={(details) => this.setState({ details })}
                         />
-                        <FormButton
-                            value="Add Record"
-                            onFormSubmit={this.onFormSubmit}
-                        />
+                        <View style={{ flexDirection: 'row' }}>
+                            <FormButton
+                                value="Attach Reports"
+                                onFormSubmit={() => { }}
+                            />
+                            <FormButton
+                                value="Add Record"
+                                onFormSubmit={this.onFormSubmit}
+                            />
+                        </View>
                     </ScrollView>
                 </Card>
                 <View style={{ flex: 1 }} />

@@ -51,6 +51,12 @@ class PatientDashboard extends React.Component {
         // Call backend api to fetch data based on did
     }
 
+    onRequest = () => {
+        navigatePush('PatientRequests', {
+            did: this.state.did
+        })
+    }
+
     render() {
         return (
             <View style={{ flex: 1, justifyContent: 'center', backgroundColor: 'white' }}>
@@ -89,6 +95,12 @@ class PatientDashboard extends React.Component {
                                 }}
                             />
                         </CardSection>
+                        <View style={{ flex: 1 }}>
+                            <FormButton
+                                value="Show Requests"
+                                onFormSubmit={this.onRequest}
+                            />
+                        </View>
                     </Card>
                 }
             </View >

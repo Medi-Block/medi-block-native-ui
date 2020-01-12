@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
-import { FormColoredTextField, FormButton, Card } from '../components';
+import { FormColoredTextField, FormButton, Card, navigatePush } from '../components';
 
 class PatientSignUp extends React.Component {
     static get options() {
@@ -25,7 +25,9 @@ class PatientSignUp extends React.Component {
     }
 
     onFormSubmit = () => {
-        return [];
+        navigatePush('PatientDashboard', {
+            pid: this.state.pid
+        })
     }
 
     render() {

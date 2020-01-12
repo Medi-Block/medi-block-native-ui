@@ -12,4 +12,5 @@ export function registerScreens() {
     Navigation.registerComponent('PatientLogin', () => require('./Patient/Login').default);
     Navigation.registerComponent('PatientSignUp', () => require('./Patient/SignUp').default);
     Navigation.registerComponent('PatientDashboard', () => require('./Patient/Dashboard').default);
+    Navigation.registerComponent('PatientRequests', () => require('./Patient/Requests').default);
 }
