@@ -1,6 +1,7 @@
 import React from 'react';
-import { TextInput, View } from 'react-native';
+import { TextInput, View, Button } from 'react-native';
 import styles from './styles';
+import { CardButton } from './CardButton';
 
 class FormButton extends React.Component {
     static defaultProps = {
@@ -23,15 +24,15 @@ class FormButton extends React.Component {
     render() {
         return (
             <View style={styles.formButtonView}>
-                <TextInput
+                <CardButton
                     style={[styles.formBorder, styles.formButtonTextField]}
-                    onTouchStart={value => {
-                        this.props.onFormSubmit()
+                    onPress={() => {
+                        this.props.onFormSubmit
                     }}
-                    value={this.state.value}
-                    pointerEvents="none"
-                />
-            </View>
+                >
+                    {this.state.value}
+                </CardButton>
+            </View >
         )
     };
 };

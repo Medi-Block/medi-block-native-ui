@@ -53,15 +53,16 @@ export default StyleSheet.create({
         color: "#000"
     },
     buttonTouchable: {
-        backgroundColor: defaultStyle.BUTTON_BACKGROUND_COLOR_PRIMARY,
+        backgroundColor: defaultStyle.BUTTON_BORDER_COLOR_PRIMARY,
         borderRadius: defaultStyle.BUTTON_BORDER_RADIUS_SECONDARY,
         borderWidth: defaultStyle.BUTTON_BORDER_WIDTH_PRIMARY,
         borderColor: defaultStyle.BUTTON_BORDER_COLOR_PRIMARY,
         padding: defaultStyle.BUTTON_PADDING,
+        margin: defaultStyle.MARGIN_HORI
     },
     buttonText: {
         alignSelf: 'center',
-        color: defaultStyle.BUTTON_FONT_COLOR_PRIMARY,
+        color: defaultStyle.BUTTON_BACKGROUND_COLOR_PRIMARY,
         fontSize: defaultStyle.BUTTON_FONT_SIZE_PRIMARY,
         fontWeight: defaultStyle.BUTTON_FONT_WEIGHT_PRIMARY,
         fontFamily: defaultStyle.BUTTON_FONT_FAMILY_PRIMARY,
@@ -79,11 +80,11 @@ export default StyleSheet.create({
         fontSize: defaultStyle.FONT_SIZE_TITLE,
         marginLeft: defaultStyle.PADDING_HORI,
         marginBottom: 1.5 * defaultStyle.MARGIN_VERT,
-        fontFamily: defaultStyle.FONT_FAMILY_NORMAL
+        fontFamily: defaultStyle.FONT_FAMILY_NORMAL,
     },
     formTextfield: {
         color: defaultStyle.FONT_COLOR_PRIMARY,
-        fontSize: defaultStyle.FONT_SIZE_NORMAL,
+        fontSize:defaultStyle.FONT_SIZE_NORMAL,
         marginLeft: defaultStyle.MARGIN_HORI,
         paddingLeft: defaultStyle.PADDING_HORI
     },

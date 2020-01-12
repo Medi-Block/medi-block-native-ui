@@ -41,6 +41,7 @@ class FormColoredTextField extends React.Component {
                     value={this.state.value}
                     placeholder={this.props.placeholder || "Enter Text..."}
                     multiline={this.props.multiline || false}
+                    secureTextEntry={this.props.secureTextEntry}
                 />
             </FormView>
         )

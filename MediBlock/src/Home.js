@@ -18,7 +18,7 @@ class Home extends React.Component {
                 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                     <Text style={{
                         color: defaultStyles.FONT_COLOR_PRIMARY,
-                        fontSize: defaultStyles.FONT_SIZE_TITLE
+                        fontSize: defaultStyles.FONT_SIZE_HEADING
                     }}>
                         Welcome to MediBlock
             </Text>

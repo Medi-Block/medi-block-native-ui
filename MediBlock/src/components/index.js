@@ -7,4 +7,8 @@ export * from './FormColoredTextField';
 export * from './FormDropdownPicker';
 export * from './FormTimePicker';
 export * from './FormDatePicker';
+export * from './FormColoredTextField';
+export * from './FormButton';
+export * from './FormView';
+export * from './FormDatePicker';
 export * from './NavigationBtn';
