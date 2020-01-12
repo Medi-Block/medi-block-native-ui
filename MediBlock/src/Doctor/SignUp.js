@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
-import { FormColoredTextField, FormButton, Card } from '../components';
+import { FormColoredTextField, FormButton, Card, navigatePush } from '../components';
 
 class DoctorSignUp extends React.Component {
     static get options() {
@@ -24,7 +24,8 @@ class DoctorSignUp extends React.Component {
     }
 
     onFormSubmit = () => {
-        return [];
+        // Call api to push sign up doctor
+        navigatePush('DoctorDashboard')
     }
 
     render() {
