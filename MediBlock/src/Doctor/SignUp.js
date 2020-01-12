@@ -44,11 +44,6 @@ class DoctorSignUp extends React.Component {
                             onChangeText={(phone) => this.setState({ phone })}
                         />
                         <FormColoredTextField
-                            placeholder="Enter Your Doctor ID here"
-                            title="Doctor ID"
-                            onChangeText={(did) => this.setState({ did })}
-                        />
-                        <FormColoredTextField
                             placeholder="Enter Your Password here"
                             title="Password"
                             onChangeText={(password) => this.setState({ password })}

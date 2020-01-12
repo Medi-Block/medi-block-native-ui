@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
-import { FormColoredTextField, FormButton, Card } from '../components';
+import { FormColoredTextField, FormButton, Card, navigate } from '../components';
 
 class DoctorSignUp extends React.Component {
     static get options() {
@@ -17,8 +17,6 @@ class DoctorSignUp extends React.Component {
         super(props);
         this.state = {
             did: "",
-            name: "",
-            phone: "",
             password: ""
         }
     }
