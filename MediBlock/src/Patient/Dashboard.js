@@ -48,9 +48,11 @@ class PatientDashboard extends React.Component {
     }
 
     onRequest = () => {
-        navigatePush('PatientRequests', {
-            did: this.state.did
-        })
+        setTimeout(() => {
+            navigatePush('PatientRequests', {
+                did: this.state.did
+            })
+        }, 1000);
     }
 
     render() {

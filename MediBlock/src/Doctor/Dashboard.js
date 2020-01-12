@@ -30,36 +30,40 @@ class DoctorHome extends React.Component {
 
     onRequest = () => {
         // Call backend api to fetch data based on pid
-        const patientDetail = {
-            name: "HC",
-            phone: "9234683242",
-            age: '19',
-            records: [
-                {
-                    did: 1,
-                    details: "asdfsdf asdfasd fdsf ds",
-                },
-                {
-                    did: 2,
-                    details: "asdfsdf asdfasd fdsf ds",
-                },
-                {
-                    did: 2,
-                    details: "asdfsdf asdfasd fdsf ds",
-                }
-            ]
-        };
-        this.setState({
-            patientDetailVisible: true,
-            patientDetail: patientDetail
-        })
+        setTimeout(() => {
+            const patientDetail = {
+                name: "HC",
+                phone: "9234683242",
+                age: '19',
+                records: [
+                    {
+                        did: 1,
+                        details: "asdfsdf asdfasd fdsf ds",
+                    },
+                    {
+                        did: 2,
+                        details: "asdfsdf asdfasd fdsf ds",
+                    },
+                    {
+                        did: 2,
+                        details: "asdfsdf asdfasd fdsf ds",
+                    }
+                ]
+            };
+            this.setState({
+                patientDetailVisible: true,
+                patientDetail: patientDetail
+            })
+        }, 1000);
     }
 
     onAdd = () => {
-        navigatePush('DoctorNewRecord', {
-            pid: this.state.pid,
-            did: this.state.did
-        })
+        setTimeout(() => {
+            navigatePush('DoctorNewRecord', {
+                pid: this.state.pid,
+                did: this.state.did
+            })
+        }, 1000);
     }
 
     render() {

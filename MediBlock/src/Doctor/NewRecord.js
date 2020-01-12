@@ -27,7 +27,9 @@ class NewRecord extends React.Component {
 
     onFormSubmit = () => {
         // Call add record function
-        navigatePop();
+        setTimeout(() => {
+            navigatePop();
+        }, 1000);
     }
 
     render() {

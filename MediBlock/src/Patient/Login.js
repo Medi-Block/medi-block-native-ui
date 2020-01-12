@@ -18,9 +18,11 @@ class PatientSignUp extends React.Component {
     }
 
     onFormSubmit = () => {
-        navigatePush('PatientDashboard', {
-            pid: this.state.pid
-        });
+        setTimeout(() => {
+            navigatePush('PatientDashboard', {
+                pid: this.state.pid
+            });
+        }, 1000);
     }
 
     render() {

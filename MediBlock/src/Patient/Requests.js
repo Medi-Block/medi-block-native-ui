@@ -28,7 +28,9 @@ class Requests extends React.Component {
     }
 
     onRequest = () => {
-        navigatePop();
+        setTimeout(() => {
+            navigatePop();
+        }, 1000);
     }
 
     render() {

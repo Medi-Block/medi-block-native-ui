@@ -21,7 +21,9 @@ class DoctorSignUp extends React.Component {
 
     onFormSubmit = () => {
         // Call api to push sign up doctor
-        navigatePush('DoctorDashboard')
+        setTimeout(() => {
+            navigatePush('DoctorDashboard')
+        }, 1000);
     }
 
     render() {

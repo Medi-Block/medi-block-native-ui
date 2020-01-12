@@ -18,9 +18,11 @@ class DoctorSignUp extends React.Component {
     }
 
     onFormSubmit = () => {
-        navigatePush('DoctorDashboard', {
-            did: this.state.did
-        });
+        setTimeout(() => {
+            navigatePush('DoctorDashboard', {
+                did: this.state.did
+            });
+        }, 1000);
     }
 
     render() {
