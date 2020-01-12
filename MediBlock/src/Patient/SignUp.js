@@ -16,9 +16,10 @@ class PatientSignUp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            did: "",
+            pid: "",
             name: "",
             phone: "",
+            age: "",
             password: ""
         }
     }
@@ -44,9 +45,9 @@ class PatientSignUp extends React.Component {
                             onChangeText={(phone) => this.setState({ phone })}
                         />
                         <FormColoredTextField
-                            placeholder="Enter Your Doctor ID here"
-                            title="Doctor ID"
-                            onChangeText={(did) => this.setState({ did })}
+                            placeholder="Enter Age here"
+                            title="Age"
+                            onChangeText={(age) => this.setState({ age })}
                         />
                         <FormColoredTextField
                             placeholder="Enter Your Password here"

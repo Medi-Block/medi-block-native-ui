@@ -16,9 +16,7 @@ class PatientSignUp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            did: "",
-            name: "",
-            phone: "",
+            pid: "",
             password: ""
         }
     }
@@ -34,9 +32,9 @@ class PatientSignUp extends React.Component {
                 <Card customStyles={{ flex: 2, margin: 20, justifyContent: 'center' }}>
                     <ScrollView>
                         <FormColoredTextField
-                            placeholder="Enter Your Doctor ID here"
-                            title="Doctor ID"
-                            onChangeText={(did) => this.setState({ did })}
+                            placeholder="Enter Your Patient ID here"
+                            title="Patient ID"
+                            onChangeText={(pid) => this.setState({ pid })}
                         />
                         <FormColoredTextField
                             placeholder="Enter Your Password here"
