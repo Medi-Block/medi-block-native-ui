@@ -1,15 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { NavigationBtn } from '../components';
+import { NavigationBtn, topBarStyle } from '../components';
 
 class DoctorHome extends React.Component {
     static get options() {
         return {
-            topBar: {
-                title: {
-                    text: "Doctor's Home"
-                },
-            }
+            topBar: topBarStyle("Doctor's Home")
         };
     }
 

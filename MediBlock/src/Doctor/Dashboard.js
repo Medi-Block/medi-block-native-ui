@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
-import { NavigationBtn, Card, FormColoredTextField, FormButton, CardSection, Info, List, navigatePush } from '../components';
+import { NavigationBtn, Card, FormColoredTextField, FormButton, CardSection, Info, List, navigatePush, topBarStyle } from '../components';
 import styles from '../components/styles';
 import styles2 from './styles';
 import defaultStyles from '../components/defaultStyles';
@@ -8,11 +8,7 @@ import defaultStyles from '../components/defaultStyles';
 class DoctorHome extends React.Component {
     static get options() {
         return {
-            topBar: {
-                title: {
-                    text: "Doctor's Dashboard"
-                },
-            }
+            topBar: topBarStyle("Doctor's Dashboard")
         };
     }
 

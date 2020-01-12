@@ -5,11 +5,7 @@ import { FormColoredTextField, FormButton, Card, navigatePush } from '../compone
 class PatientSignUp extends React.Component {
     static get options() {
         return {
-            topBar: {
-                title: {
-                    text: "Sign Up"
-                },
-            }
+            topBar: topBarStyle("Sign Up")
         };
     }
 

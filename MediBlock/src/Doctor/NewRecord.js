@@ -1,15 +1,11 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
-import { FormColoredTextField, FormButton, Card, navigatePush, navigatePop } from '../components';
+import { FormColoredTextField, FormButton, Card, navigatePush, navigatePop, topBarStyle } from '../components';
 
 class NewRecord extends React.Component {
     static get options() {
         return {
-            topBar: {
-                title: {
-                    text: "Add Record"
-                },
-            }
+            topBar: topBarStyle("Add Record")
         };
     }
 

@@ -1,15 +1,11 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
-import { FormColoredTextField, FormButton, Card, navigatePush } from '../components';
+import { FormColoredTextField, FormButton, Card, navigatePush, topBarStyle } from '../components';
 
 class DoctorSignUp extends React.Component {
     static get options() {
         return {
-            topBar: {
-                title: {
-                    text: "Sign Up"
-                },
-            }
+            topBar: topBarStyle("Sign Up")
         };
     }
 

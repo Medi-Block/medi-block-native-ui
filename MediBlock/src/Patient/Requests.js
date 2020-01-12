@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView } from 'react-native';
-import { NavigationBtn, Card, FormColoredTextField, FormButton, CardSection, Info, List, navigatePush, navigatePop } from '../components';
+import { NavigationBtn, Card, FormColoredTextField, FormButton, CardSection, Info, List, navigatePush, navigatePop, topBarStyle } from '../components';
 import styles from '../components/styles';
 import styles2 from './styles';
 import defaultStyles from '../components/defaultStyles';
@@ -8,11 +8,7 @@ import defaultStyles from '../components/defaultStyles';
 class Requests extends React.Component {
     static get options() {
         return {
-            topBar: {
-                title: {
-                    text: "Patient's Dashboard"
-                },
-            }
+            topBar: topBarStyle("Requests")
         };
     }
 
