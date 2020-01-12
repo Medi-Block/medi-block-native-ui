@@ -27,7 +27,7 @@ class FormButton extends React.Component {
                 <CardButton
                     style={[styles.formBorder, styles.formButtonTextField]}
                     onPress={() => {
-                        this.props.onFormSubmit
+                        this.props.onFormSubmit()
                     }}
                 >
                     {this.state.value}
