@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -14,6 +14,7 @@
     "@ui-kitten/components": "^4.3.2",
     "react": "16.9.0",
     "react-native": "0.61.5",
+    "react-native-navigation": "^4.4.0",
     "react-native-svg": "^10.0.0"
   },
   "devDependencies": {
